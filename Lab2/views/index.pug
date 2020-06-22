@@ -2,4 +2,8 @@
 
 block content
   h1= title
-  p Welcome to #{title}
+  if(title == 'Error')
+    p There was something wrong with your application. Please try again
+  else
+    p Welcome to #{title}
+    p Output: #{x} #{method} #{y} = #{result}
